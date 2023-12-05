@@ -13,4 +13,14 @@ type Book {
     bookId: String
     image: String
     title: String
-}`
+}
+type Auth {
+    token: ID!
+    user: User
+}
+type Query {
+    books: [Book]
+    book(bookId: bookId!): Book
+    me: User
+}
+`
