@@ -4,23 +4,26 @@ type  User {
     username: String
     email: String
     password: String
-    savedBooks: [bookSchema]!
+    savedbooks: [bookSchema]!
 }
-type Book {
-    _id: ID
-    authors: [authors]
+type bookSchema {
+    authors: [String]!
     description: String
     bookId: String
     image: String
+    link: String
     title: String
 }
+
 type Auth {
     token: ID!
     user: User
 }
 type Query {
-    books: [Book]
-    book(bookId: bookId!): Book
+    users: [User]
+    user(username: String!): User
+    savedbooks: [bookSchema]
     me: User
 }
 `
+module.exports= typeDefs;
