@@ -24,4 +24,11 @@ export const ADD_USER = gql`
   }
 `;
 
+export const ADD_BOOK = gql`
+  mutation addBook($bookId: ID!) {
+    addBook(bookId: $bookId) {
+      bookId
+    }
+  }`;
+
 

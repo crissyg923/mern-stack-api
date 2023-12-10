@@ -6,8 +6,13 @@ export const QUERY_ME = gql`
       _id
       username
       email
-      savedBooks
+      savedBooks {
+        bookId
       }
     }
   }
 `;
+
+export const searchGoogleBooks = (query) => {
+  return fetch(`https://www.googleapis.com/books/v1/volumes?q=${query}`);
+};
