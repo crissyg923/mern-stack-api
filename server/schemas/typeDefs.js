@@ -19,6 +19,7 @@ type Auth {
     user: User
 }
 type Query {
+    users: [User]
     me: User
 }
 
