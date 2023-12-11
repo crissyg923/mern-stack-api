@@ -28,7 +28,18 @@ export const ADD_BOOK = gql`
   mutation addBook($bookId: ID!) {
     addBook(bookId: $bookId) {
       bookId
+      title
+      description
+      image
+      authors
     }
   }`;
+
+  export const REMOVE_BOOK = gql`
+    mutation removeBook($bookID: ID!) {
+      removeBook(bookId: $bookId) {
+        bookId
+      }
+    }`;
 
 
