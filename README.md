@@ -3,8 +3,10 @@
 
 [deployed link](https://peaceful-basin-62995-ae860d87c4fe.herokuapp.com/)
 
+![site image](/client/src/images/sitescreenshot.png)
+
 ## Description
-This is a website that was recoded from an Express API to include GraphQL terminology.  Users can search for books and save their faves to a list attached to their specific user info.
+This is a website that was refactored from a RESTful API to be a GraphQL API with Apollo Server.  Users can search for books and save their faves to a list attached to their specific user info.  
 
 ## Table of Contents
 
@@ -16,16 +18,16 @@ This is a website that was recoded from an Express API to include GraphQL termin
 6. [Questions](#questions)
 
 ## Installation
-Head to the mern-book-api repo and clone the HTTPS version to use on your local machine.  Please be sure to create a new branch for all your changes.
+Head to the [mern-book-api repo](https://github.com/crissyg923/mern-stack-api) and clone the HTTPS version to use on your local machine.  Please be sure to create a new branch for all your changes.
 
 ## Usage
-This application can be used by heading to the [deployed link](https://peaceful-basin-62995-ae860d87c4fe.herokuapp.com/) and creating an account.  Browse for books by title and save your faves to your account.
+This application can be used by heading to the [deployed link](https://peaceful-basin-62995-ae860d87c4fe.herokuapp.com/) and creating an account.  Browse for books by title and save your faves to your account.  Furthermore, this code can be used as a reference for creating your own GraphQL API.
 
 ## Credits
-Rutgers tutors and starter code.
+Rutgers tutors and RESTful API starter code.
 
 ## How to Contribute
-Contribute to this project by adding functionality to allow people to search by fields other than title and allowing people to purchase the books from third party sites.
+Contribute to this project by adding functionality to allow people to search by fields other than title/author and allowing people to purchase the books from third party sites.
 
 ## Tests
 N/A
